@@ -1,3 +1,5 @@
+#[ERROR] The WARP socks5 proxy (WireProxy) failed to start! Please try again later. FIX!
+
 # x-ui-scripts
 
 This repository contains some useful scripts for x-ui and 3x-ui.
