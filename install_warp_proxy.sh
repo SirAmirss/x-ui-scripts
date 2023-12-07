@@ -60,12 +60,12 @@ plain="\e[0m"
 # Draw ASCII-ART
 function draw_ascii_art() {
   echo -e "
-   ____  ____       _       ____    ____  _____  ______              ______  ____  ____    
-  |_   ||   _|     / \     |_   \  /   _||_   _||_   _ \`.          .' ___  ||_   ||   _|  
-    | |__| |      / _ \      |   \/   |    | |    | | \`. \ ______ / .'   \_|  | |__| |    
-    |  __  |     / ___ \     | |\  /| |    | |    | |  | ||______|| |   ____  |  __  |     
-   _| |  | |_  _/ /   \ \_  _| |_\/_| |_  _| |_  _| |_.' /        \ \`.___]  |_| |  | |_   
-  |____||____||____| |____||_____||_____||_____||______.'          \`._____.'|____||____|  
+        _       ____    ____  _____  ______              ______  ____  ____    
+       / \     |_   \  /   _||_   _||_   _ \`.          .' ___  ||_   ||   _|  
+      / _ \      |   \/   |    | |    | | \`. \ ______ / .'   \_|  | |__| |    
+     / ___ \     | |\  /| |    | |    | |  | ||______|| |   ____  |  __  |     
+   _/ /   \ \_  _| |_\/_| |_  _| |_  _| |_.' /        \ \`.___]  |_| |  | |_   
+  |____| |____||_____||_____||_____||______.'          \`._____.'|____||____|  
   "
 }
 
@@ -478,8 +478,7 @@ function step_create_command() {
     mkdir -p /etc/wireguard
     # Temporary fix for error during installation after version 3.0.0 fscarmen/warp !!
     # Using the version 2.5.3 for now until it get fixed!
-    # wget -N -P /etc/wireguard https://gitlab.com/fscarmen/warp/-/raw/main/menu.sh
-    wget -N -P /etc/wireguard https://gitlab.com/fscarmen/warp/-/raw/594e1d5944ce357ea865054fa53ed4c050ec3c49/menu.sh
+    wget -N -P /etc/wireguard https://gitlab.com/fscarmen/warp/-/raw/main/menu.sh
     chmod +x /etc/wireguard/menu.sh
     ln -sf /etc/wireguard/menu.sh /usr/bin/warp
   }
