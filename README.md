@@ -1,4 +1,5 @@
-#[ERROR] The WARP socks5 proxy (WireProxy) failed to start! Please try again later. FIX!
+# FIX!
+[ERROR] The WARP socks5 proxy (WireProxy) failed to start! Please try again later. FIXED!
 
 # x-ui-scripts
 
